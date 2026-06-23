@@ -1,11 +1,13 @@
 ```mermaid
-Data Structure --> Tree;
-Tree --> Algorithm Techniques;
-Algorithm Techniques --> Graph;
-Graph --> DP;
-DP --> Number Theory;
-Number Theory --> Math;
-Math --> String Algorithm;
-String Algorithm --> Geometry;
-Geometry --> Algorithm Paradigm;
+graph TD
+    Data_Structure[Data Structure] --> Tree
+    Tree --> Algorithm_Techniques[Algorithm Techniques]
+    Algorithm_Techniques --> Graph
+    Graph --> DP
+    DP --> Number_Theory[Number Theory]
+    Number_Theory --> Math
+    Math --> String_Algorithm[String Algorithm]
+    String_Algorithm --> Geometry
+    Geometry --> Algorithm_Paradigm[Algorithm Paradigm]
+
 ```
