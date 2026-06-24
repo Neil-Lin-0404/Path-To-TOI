@@ -11,7 +11,9 @@ graph TD
     Geometry --> Algorithm_Paradigm[Algorithm Paradigm]
 
 ```
+
 ---
+
 ```mermaid
 graph TD
 選擇今天學的一章-->了解基本概念/知識點
