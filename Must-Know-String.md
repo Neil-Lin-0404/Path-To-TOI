@@ -119,7 +119,7 @@
 # Phase 5：Suffix Structures ⭐⭐⭐⭐⭐
 
 ## Chapter 12. Suffix Array
-- SA
+- Suffix Array（SA）
 - Rank Array
 - LCP
 - Kasai Algorithm
@@ -179,7 +179,7 @@
 ## Chapter 19. String DP
 - DP on String
 - Edit Distance
-- LCS
+- Longest Common Subsequence（LCS）
 - Subsequence DP
 
 ---
@@ -191,13 +191,13 @@
 
 ---
 
-# 不建議現在學（IOI 很少考）
+# 不建議現在學（IOI 很少考） ⭐⭐☆☆☆
 
 - Suffix Tree
 - SA-IS
-- Burrows Wheeler Transform
+- Burrows-Wheeler Transform（BWT）
 - FM Index
-- Wavelet Tree（字串用途）
+- Wavelet Tree（String Applications）
 - Rope
-- DAWG（理論）
-- Ukkonen Algorithm（直接實作）
+- DAWG（Directed Acyclic Word Graph）
+- Ukkonen Algorithm（Direct Implementation）
