@@ -1,4 +1,4 @@
-# Data Structure.md
+# Data Structures.md
 
 > Target：
 >
@@ -15,9 +15,7 @@
 ## Chapter 1. Array
 - Static Array
 - Dynamic Array
-- Prefix Sum
-- Difference Array
-- Coordinate Compression
+- Multi-dimensional Array
 
 ---
 
@@ -42,7 +40,6 @@
 - Circular Queue
 - Deque
 - Monotonic Queue
-- Priority Queue（概念）
 
 ---
 
@@ -61,13 +58,13 @@
 - unordered_set
 - unordered_map
 - Frequency Table
-- Coordinate Compression
+- Custom Hash
 
 ---
 
 # Phase 3：Disjoint Set ⭐⭐⭐⭐⭐
 
-## Chapter 7. Disjoint Set Union
+## Chapter 7. Disjoint Set Union（DSU）
 - Find
 - Union
 - Path Compression
@@ -85,67 +82,42 @@
 # Phase 4：Range Query ⭐⭐⭐⭐⭐
 
 ## Chapter 9. Sparse Table
-- RMQ
+- Range Minimum Query（RMQ）
 - Idempotent Operation
 - O(1) Query
 
 ---
 
-## Chapter 10. Prefix Sum
-- 1D Prefix Sum
-- 2D Prefix Sum
+## Chapter 10. Square Root Decomposition
+- Block Partition
+- Range Query
+- Range Update
 
 ---
 
-## Chapter 11. Difference Array
-- 1D Difference
-- 2D Difference
+# Phase 5：Advanced Data Structures ⭐⭐⭐⭐☆
 
----
-
-# Phase 5：Offline Techniques ⭐⭐⭐⭐☆
-
-## Chapter 12. Coordinate Compression
-- Rank Compression
-- Discretization
-
----
-
-## Chapter 13. Offline Query
-- Sort Query
-- Offline Processing
-
----
-
-## Chapter 14. Mo's Algorithm
-- Query Ordering
-- Block Decomposition
-
----
-
-# Phase 6：Advanced Structures ⭐⭐⭐⭐☆
-
-## Chapter 15. Ordered Set
+## Chapter 11. Ordered Set
 - Order Statistics
 - Policy-Based Data Structure（PBDS）
 
 ---
 
-## Chapter 16. Bitset
+## Chapter 12. Bitset
 - std::bitset
 - Dynamic Bitset
 - Bitset Optimization
 
 ---
 
-## Chapter 17. Block Decomposition
+## Chapter 13. Block Decomposition
 - Square Root Decomposition
-- Range Query
-- Range Update
+- Offline Query
+- Range Statistics
 
 ---
 
-# 不建議現在學（IOI 很少考）
+# 不建議現在學（IOI 很少考） ⭐⭐☆☆☆
 
 - Skip List
 - Bloom Filter
