@@ -34,6 +34,7 @@
 - Magnitude
 - Normalize（概念）
 - Direction Vector
+- Unit Vector（概念）
 
 ---
 
@@ -48,7 +49,7 @@
 
 ## Chapter 4. Cross Product
 - Cross Product
-- Orientation
+- Orientation Test
 - Area of Triangle
 - Area of Polygon
 - Left Turn
@@ -99,6 +100,7 @@
 - Concave Polygon
 - Polygon Area
 - Shoelace Formula
+- Point in Polygon
 
 ---
 
@@ -106,6 +108,7 @@
 - Graham Scan
 - Monotone Chain
 - Orientation Test
+- Point on Convex Hull
 
 ---
 
@@ -123,7 +126,7 @@
 # Phase 5：Sweep Line ⭐⭐⭐⭐☆
 
 ## Chapter 12. Sweep Line
-- Event
+- Event Point
 - Active Set
 - Line Sweep
 - Interval Sweep
@@ -154,13 +157,13 @@
 
 ---
 
-## Chapter 16. Geometry + DP
+## Chapter 16. Geometry + Dynamic Programming
 - Convex Polygon DP
 - Geometry Optimization（概念）
 
 ---
 
-# 不建議現在學（IOI 很少考）
+# 不建議現在學（IOI 很少考） ⭐⭐☆☆☆
 
 - Delaunay Triangulation
 - Voronoi Diagram
