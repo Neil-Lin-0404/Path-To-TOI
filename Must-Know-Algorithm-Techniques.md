@@ -55,12 +55,14 @@
 - 2D Prefix Sum
 - Prefix XOR
 - Prefix GCD
+- Prefix Minimum
+- Prefix Maximum
 
 ---
 
 ## Chapter 6. Difference Array
-- 1D Difference
-- 2D Difference
+- 1D Difference Array
+- 2D Difference Array
 - Range Update
 
 ---
@@ -159,13 +161,15 @@
 ## Chapter 18. STL Techniques
 - Iterator
 - Comparator
+- Custom Comparator
 - Custom Hash
 - Lambda
-- Policy-based Data Structure（PBDS）（了解）
+- Structured Binding
+- Policy-Based Data Structure（PBDS）（了解）
 
 ---
 
-# 不建議現在學（IOI 很少考）
+# 不建議現在學（IOI 很少考） ⭐⭐☆☆☆
 
 - Parallel Binary Search
 - Fractional Cascading
