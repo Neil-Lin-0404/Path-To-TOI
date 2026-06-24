@@ -13,7 +13,7 @@
 # Phase 1：Greedy Algorithms ⭐⭐⭐⭐⭐
 
 ## Chapter 1. Greedy Fundamentals
-- Greedy Choice
+- Greedy Choice Property
 - Local Optimum
 - Global Optimum
 - Greedy Strategy
@@ -21,7 +21,7 @@
 - Exchange Argument
 - Staying Ahead Argument
 - Cut Property
-- Greedy Proof
+- Greedy Correctness Proof
 
 ---
 
@@ -71,7 +71,7 @@
 - Merge Sort Inversion Count
 - Divide and Conquer on Arrays
 - Divide and Conquer on Trees（概念）
-- Divide and Conquer Optimization（概念）
+- Divide and Conquer DP Optimization（概念）
 
 ---
 
@@ -114,8 +114,8 @@
 - Random Shuffle
 - Random Pivot
 - Expected Complexity
-- Monte Carlo
-- Las Vegas
+- Monte Carlo Algorithm
+- Las Vegas Algorithm
 
 ---
 
@@ -125,7 +125,7 @@
 - Loop Invariant
 - Mathematical Induction
 - Exchange Argument
-- Contradiction
+- Proof by Contradiction
 - Proof by Construction
 
 ---
@@ -145,9 +145,9 @@
 ## Chapter 13. Problem Modeling
 - State Modeling
 - Graph Modeling
-- DP Modeling
+- Dynamic Programming Modeling
 - Geometry Modeling
-- Transformation
+- Problem Transformation
 
 ---
 
@@ -159,7 +159,7 @@
 
 ---
 
-# 不建議現在學（IOI 很少考）
+# 不建議現在學（IOI 很少考） ⭐⭐☆☆☆
 
 - Simulated Annealing
 - Genetic Algorithm
