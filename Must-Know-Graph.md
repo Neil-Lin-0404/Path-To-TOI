@@ -32,8 +32,6 @@
 - Complete Graph
 - Sparse Graph
 - Dense Graph
-- Tree
-- Forest
 
 ---
 
@@ -110,7 +108,7 @@
 
 # Phase 3：Minimum Spanning Tree ⭐⭐⭐⭐⭐
 
-## Chapter 11. Disjoint Set Union
+## Chapter 11. Disjoint Set Union（DSU）
 - Find
 - Union
 - Path Compression
@@ -121,20 +119,20 @@
 
 ## Chapter 12. Kruskal
 - Edge Sorting
-- MST
+- Minimum Spanning Tree
 
 ---
 
 ## Chapter 13. Prim
 - Priority Queue
-- MST
+- Minimum Spanning Tree
 
 ---
 
 # Phase 4：Directed Graph ⭐⭐⭐⭐⭐
 
 ## Chapter 14. Topological Sort
-- DFS Topological
+- DFS Topological Sort
 - Kahn Algorithm
 
 ---
@@ -146,10 +144,11 @@
 
 ---
 
-## Chapter 16. Strongly Connected Component
-- Tarjan
-- Kosaraju
+## Chapter 16. Strongly Connected Components（SCC）
+- Tarjan Algorithm
+- Kosaraju Algorithm
 - SCC DAG
+- Condensation Graph
 
 ---
 
@@ -167,28 +166,31 @@
 ---
 
 ## Chapter 19. Biconnected Component
-- Edge BCC
-- Vertex BCC
+- Edge Biconnected Component
+- Vertex Biconnected Component
 
 ---
 
 # Phase 6：Tree Algorithms ⭐⭐⭐⭐⭐
 
 ## Chapter 20. Binary Lifting
+- Ancestor Table
 - Jump Table
 - K-th Ancestor
 
 ---
 
-## Chapter 21. Lowest Common Ancestor
+## Chapter 21. Lowest Common Ancestor（LCA）
 - Binary Lifting
 - Euler Tour
-- RMQ
+- RMQ（了解）
 
 ---
 
 ## Chapter 22. Euler Tour
 - Euler Order
+- Entry Time
+- Exit Time
 - Flatten Tree
 - Subtree Interval
 
@@ -205,17 +207,20 @@
 - Subtree DP
 - Re-root DP
 - Diameter DP
+- State Design
 
 ---
 
-## Chapter 25. Heavy-Light Decomposition
+## Chapter 25. Heavy-Light Decomposition（HLD）
 - Heavy Edge
+- Light Edge
 - Heavy Chain
 - Path Query
 
 ---
 
 ## Chapter 26. Centroid Decomposition
+- Centroid
 - Divide and Conquer
 - Distance Query
 
@@ -224,12 +229,14 @@
 ## Chapter 27. DSU on Tree
 - Sack Technique
 - Small-to-Large
+- Frequency Statistics
 
 ---
 
-# Phase 7：Flow ⭐⭐⭐⭐☆
+# Phase 7：Network Flow ⭐⭐⭐⭐☆
 
 ## Chapter 28. Network Flow
+- Flow Network
 - Residual Graph
 - Residual Edge
 - Augmenting Path
@@ -237,6 +244,7 @@
 ---
 
 ## Chapter 29. Edmonds-Karp
+- BFS Augmenting Path
 
 ---
 
@@ -248,33 +256,34 @@
 
 ## Chapter 31. Minimum Cost Maximum Flow
 - SPFA
-- Potentials（Johnson）
+- Johnson Potentials
 
 ---
 
 # Phase 8：Matching ⭐⭐⭐⭐☆
 
 ## Chapter 32. Bipartite Graph
-- Coloring
+- Bipartite Coloring
 
 ---
 
 ## Chapter 33. Bipartite Matching
 - Kuhn Algorithm
-- Hopcroft-Karp
+- Hopcroft-Karp Algorithm
 
 ---
 
-# Phase 9：IOI 常見技巧 ⭐⭐⭐⭐☆
+# Phase 9：IOI Advanced ⭐⭐⭐⭐☆
 
 ## Chapter 34. Functional Graph
-- Cycle
+- Cycle Detection
 - Binary Lifting
 - Functional Graph DP
 
 ---
 
 ## Chapter 35. Virtual Tree
+- Virtual Tree Construction
 - LCA
 - Compress Tree
 
@@ -286,14 +295,14 @@
 
 ---
 
-# 不建議現在學（IOI 幾乎不考）
+# 不建議現在學（IOI 幾乎不考） ⭐⭐☆☆☆
 
 - Link-Cut Tree
 - Euler Tour Tree
 - Top Tree
 - Dynamic Connectivity
 - Gomory-Hu Tree
-- Blossom
+- Blossom Algorithm
 - Dominator Tree
 - Planar Graph
 - Chordal Graph
