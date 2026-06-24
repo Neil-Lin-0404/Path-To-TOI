@@ -1,16 +1,16 @@
-# Tree 必修清單（TOI / APCS / Codeforces）
+# Tree.md
 
-> 學習順序：由上往下
+> Target：
 >
-> 完成此清單後，可應付：
-> - TOI 初賽
-> - APCS
-> - TOI 選訓大部分 Tree 題
-> - Codeforces Div2 大部分 Tree 題
+> - IOI Bronze / Silver / Gold
+> - APIO
+> - CEOI
+> - JOI Final
+> - USACO Platinum
 
 ---
 
-# Phase 1：Tree Foundations（樹基礎）
+# Phase 1：Tree Foundations ⭐⭐⭐⭐⭐
 
 ## Chapter 1. Tree Fundamentals
 - Tree
@@ -52,7 +52,6 @@
 ---
 
 ## Chapter 3. Tree Traversal
-
 ### DFS
 - Recursive DFS
 - Iterative DFS
@@ -71,7 +70,7 @@
 
 ---
 
-# Phase 2：Binary Tree
+# Phase 2：Binary Tree ⭐⭐⭐⭐⭐
 
 ## Chapter 4. Binary Tree
 - Binary Tree
@@ -111,7 +110,7 @@
 
 ---
 
-# Phase 3：Tree Data Structures
+# Phase 3：Tree Data Structures ⭐⭐⭐⭐⭐
 
 ## Chapter 7. Trie
 - Prefix Tree
@@ -151,7 +150,7 @@
 
 ---
 
-# Phase 4：Tree Algorithms
+# Phase 4：Tree Algorithms ⭐⭐⭐⭐⭐
 
 ## Chapter 11. Binary Lifting
 - Jump Table
@@ -191,7 +190,7 @@
 
 ---
 
-# Phase 5：TOI 選訓
+# Phase 5：TOI 選訓 ⭐⭐⭐⭐☆
 
 ## Chapter 16. Heavy-Light Decomposition（HLD）
 - Heavy Edge
@@ -233,13 +232,13 @@
 
 ---
 
-# Phase 6：理解即可
+# Phase 6：理解即可 ⭐⭐⭐☆☆
 
 ## Chapter 21. AVL Tree
 - Balance Factor
-- LL
-- RR
-- LR
+- LL Rotation
+- RR Rotation
+- LR Rotation
 - RL Rotation
 
 ---
@@ -276,18 +275,22 @@
 
 ---
 
-# Phase 7：IOI（之後再學）
+# Phase 7：IOI（之後再學） ⭐⭐☆☆☆
 
 ## Dynamic Trees
 - Link-Cut Tree
 - Euler Tour Tree
 - Top Tree
 
+---
+
 ## Advanced Segment Trees
 - Dynamic Segment Tree
 - Merge Sort Tree
 - Segment Tree Beats
 - Li Chao Tree
+
+---
 
 ## Advanced Trees
 - Cartesian Tree
