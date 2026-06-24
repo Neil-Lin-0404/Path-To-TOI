@@ -38,14 +38,15 @@
 ---
 
 ## Chapter 3. Modular Arithmetic
+- Modular Arithmetic
 - Mod
 - Modular Addition
 - Modular Subtraction
 - Modular Multiplication
 - Modular Division
-- Modular Inverse
 - Congruence
 - Modular Equation
+- Modular Inverse
 
 ---
 
@@ -60,7 +61,7 @@
 
 ## Chapter 5. Euler's Totient Function
 - Euler Phi
-- Properties
+- Euler Phi Properties
 - Sieve Phi
 
 ---
@@ -74,7 +75,7 @@
 ---
 
 ## Chapter 7. Chinese Remainder Theorem
-- CRT
+- Chinese Remainder Theorem（CRT）
 - Extended CRT（概念）
 
 ---
@@ -106,8 +107,8 @@
 
 ## Chapter 11. Modular Inverse
 - Fermat's Little Theorem
-- Extended GCD
-- Linear Inverse
+- Extended Euclidean Algorithm
+- Linear Modular Inverse
 
 ---
 
@@ -120,6 +121,7 @@
 # Phase 5：Linear Algebra ⭐⭐⭐⭐☆
 
 ## Chapter 13. Matrix
+- Matrix
 - Matrix Multiplication
 - Matrix Exponentiation
 - Transition Matrix
@@ -161,7 +163,8 @@
 ## Chapter 18. Bitwise Mathematics
 - Bit Manipulation
 - XOR Properties
-- AND / OR Properties
+- AND Properties
+- OR Properties
 - Gray Code
 
 ---
@@ -183,7 +186,7 @@
 
 ---
 
-# 不建議現在學（IOI 很少考）
+# 不建議現在學（IOI 很少考） ⭐⭐☆☆☆
 
 - Miller-Rabin（完整實作）
 - Pollard Rho
