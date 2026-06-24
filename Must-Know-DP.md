@@ -41,6 +41,7 @@
 ---
 
 ## Chapter 3. Basic DP
+
 ### 1D DP
 - Fibonacci
 - Climbing Stairs
@@ -60,7 +61,8 @@
 ## Chapter 4. Linear DP
 - Prefix DP
 - Suffix DP
-- Sequence Transition
+- Sequence DP
+- State Compression（概念）
 
 ---
 
@@ -118,6 +120,7 @@
 - Subtree DP
 - Re-root DP
 - Diameter DP
+- State Design
 
 ---
 
@@ -134,7 +137,7 @@
 ## Chapter 13. Bitmask DP
 - Bitmask State
 - Subset Enumeration
-- Transition
+- Bitmask Transition
 
 ---
 
@@ -186,11 +189,11 @@
 - Prefix Sum Optimization
 - Monotonic Queue Optimization
 - Convex Hull Trick（CHT）
-- Divide & Conquer DP Optimization
+- Divide and Conquer DP Optimization
 
 ---
 
-# 不建議現在學（IOI 很少考）
+# 不建議現在學（IOI 很少考） ⭐⭐☆☆☆
 
 - Knuth Optimization
 - Alien Trick
