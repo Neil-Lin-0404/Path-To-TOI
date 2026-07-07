@@ -1,57 +1,57 @@
 # CS_Fundamentals
 
-## 1. Complexity, Constraints, and Feasibility Sense ★★★★★
-### 1.1 Big-O and growth rate ★★★★★
-### 1.2 Estimating feasible complexity from constraints ★★★★★
-### 1.3 Time vs memory tradeoff basics ★★★★☆
-### 1.4 Recognizing when brute force is still okay ★★★★★
-### 1.5 Recognizing when optimization is required ★★★★★
+## 1. Complexity, Constraints, and Feasibility Sense [★★★★★ / ★★★★★ / ★★★★★]
+### 1.1 Big-O and growth rate [★★★★★ / ★★★★★ / ★★★★★]
+### 1.2 Estimating feasible complexity from constraints [★★★★★ / ★★★★★ / ★★★★★]
+### 1.3 Time vs memory tradeoff basics [★★★★☆ / ★★★★☆ / ★★★★★]
+### 1.4 Recognizing when brute force is still okay [★★★★★ / ★★★★★ / ★★★★★]
+### 1.5 Recognizing when optimization is required [★★★★★ / ★★★★★ / ★★★★★]
 
-## 2. Arrays, Vectors, and Core Iteration ★★★★★
-### 2.1 Array / vector mental model ★★★★★
-### 2.2 Traversal patterns ★★★★★
-### 2.3 Indexing discipline ★★★★★
-### 2.4 Reverse traversal / two-array processing basics ★★★★☆
-### 2.5 Frequency counting with arrays ★★★★★
+## 2. Arrays, Vectors, and Core Iteration [★★★★★ / ★★★★★ / ★★★★★]
+### 2.1 Array / vector mental model [★★★★★ / ★★★★★ / ★★★★★]
+### 2.2 Traversal patterns [★★★★★ / ★★★★★ / ★★★★★]
+### 2.3 Indexing discipline [★★★★★ / ★★★★★ / ★★★★★]
+### 2.4 Reverse traversal / two-array processing basics [★★★★☆ / ★★★★☆ / ★★★★☆]
+### 2.5 Frequency counting with arrays [★★★★★ / ★★★★★ / ★★★★★]
 
-## 3. Simulation and State Tracking ★★★★★
-### 3.1 Translating problem statements into state updates ★★★★★
-### 3.2 Maintaining counters / flags / positions / states ★★★★★
-### 3.3 Event-by-event simulation ★★★★★
-### 3.4 Multi-variable simulation ★★★★☆
-### 3.5 Invariant thinking in simulation ★★★★☆
+## 3. Simulation and State Tracking [★★★★★ / ★★★★★ / ★★★★☆]
+### 3.1 Translating problem statements into state updates [★★★★★ / ★★★★★ / ★★★★☆]
+### 3.2 Maintaining counters / flags / positions / states [★★★★★ / ★★★★★ / ★★★★☆]
+### 3.3 Event-by-event simulation [★★★★★ / ★★★★★ / ★★★★☆]
+### 3.4 Multi-variable simulation [★★★★☆ / ★★★★☆ / ★★★★☆]
+### 3.5 Invariant thinking in simulation [★★★★☆ / ★★★★☆ / ★★★★★]
 
-## 4. Sorting and Basic Ordering Power ★★★★★
-### 4.1 Why sorting changes problems ★★★★★
-### 4.2 Sorting numbers / pairs / structs ★★★★★
-### 4.3 Comparator basics ★★★★☆
-### 4.4 Common sorting-based problem transformations ★★★★★
-### 4.5 Stability awareness / tie-breaking awareness ★★★☆☆
+## 4. Sorting and Basic Ordering Power [★★★★★ / ★★★★★ / ★★★★★]
+### 4.1 Why sorting changes problems [★★★★★ / ★★★★★ / ★★★★★]
+### 4.2 Sorting numbers / pairs / structs [★★★★★ / ★★★★★ / ★★★★★]
+### 4.3 Comparator basics [★★★★☆ / ★★★★☆ / ★★★★★]
+### 4.4 Common sorting-based problem transformations [★★★★★ / ★★★★★ / ★★★★★]
+### 4.5 Stability awareness / tie-breaking awareness [★★★☆☆ / ★★★☆☆ / ★★★★☆]
 
-## 5. Prefix Preprocessing Foundations ★★★★★
-### 5.1 Prefix sum ★★★★★
-### 5.2 2D prefix sum basics ★★★☆☆
-### 5.3 Difference array intuition ★★★★☆
-### 5.4 Prefix frequency / cumulative counting basics ★★★★☆
-### 5.5 When preprocessing beats repeated scanning ★★★★★
+## 5. Prefix Preprocessing Foundations [★★★★★ / ★★★★★ / ★★★★★]
+### 5.1 Prefix sum [★★★★★ / ★★★★★ / ★★★★★]
+### 5.2 2D prefix sum basics [★★★☆☆ / ★★★☆☆ / ★★★★☆]
+### 5.3 Difference array intuition [★★★★☆ / ★★★★☆ / ★★★★☆]
+### 5.4 Prefix frequency / cumulative counting basics [★★★★☆ / ★★★★☆ / ★★★★☆]
+### 5.5 When preprocessing beats repeated scanning [★★★★★ / ★★★★★ / ★★★★★]
 
-## 6. Recursion, Brute Force, and Search Foundations ★★★★☆
-### 6.1 Recursion mental model ★★★★☆
-### 6.2 Recursive enumeration ★★★☆☆
-### 6.3 Brute force as a legitimate strategy ★★★★★
-### 6.4 Pruning intuition ★★★☆☆
-### 6.5 Backtracking preview ★★☆☆☆
+## 6. Recursion, Brute Force, and Search Foundations [★★★★☆ / ★★★★☆ / ★★★★★]
+### 6.1 Recursion mental model [★★★★☆ / ★★★★☆ / ★★★★★]
+### 6.2 Recursive enumeration [★★★☆☆ / ★★★☆☆ / ★★★★☆]
+### 6.3 Brute force as a legitimate strategy [★★★★★ / ★★★★★ / ★★★★★]
+### 6.4 Pruning intuition [★★★☆☆ / ★★★☆☆ / ★★★★☆]
+### 6.5 Backtracking preview [★★☆☆☆ / ★★☆☆☆ / ★★★★☆]
 
-## 7. Bitwise and Integer Handling Foundations ★★☆☆☆
-### 7.1 Binary representation basics ★★☆☆☆
-### 7.2 Bit operations: &, |, ^, ~, <<, >> ★★☆☆☆
-### 7.3 Bitmask intuition ★★☆☆☆
-### 7.4 Integer overflow / long long discipline ★★★★☆
-### 7.5 Useful low-level arithmetic tricks ★★☆☆☆
+## 7. Bitwise and Integer Handling Foundations [★★★☆☆ / ★★★☆☆ / ★★★★★]
+### 7.1 Binary representation basics [★★★☆☆ / ★★★☆☆ / ★★★★★]
+### 7.2 Bit operations: &, |, ^, ~, <<, >> [★★★☆☆ / ★★★☆☆ / ★★★★★]
+### 7.3 Bitmask intuition [★★☆☆☆ / ★★☆☆☆ / ★★★★★]
+### 7.4 Integer overflow / long long discipline [★★★★☆ / ★★★★☆ / ★★★★★]
+### 7.5 Useful low-level arithmetic tricks [★★★☆☆ / ★★★☆☆ / ★★★★☆]
 
-## 8. Contest Implementation Discipline ★★★★★
-### 8.1 Dry-run discipline ★★★★★
-### 8.2 Edge-case checklist ★★★★★
-### 8.3 0-index vs 1-index discipline ★★★★★
-### 8.4 Debugging strategy ★★★★★
-### 8.5 Template / code organization basics ★★★★☆
+## 8. Contest Implementation Discipline [★★★★★ / ★★★★★ / ★★★★★]
+### 8.1 Dry-run discipline [★★★★★ / ★★★★★ / ★★★★★]
+### 8.2 Edge-case checklist [★★★★★ / ★★★★★ / ★★★★★]
+### 8.3 0-index vs 1-index discipline [★★★★★ / ★★★★★ / ★★★★★]
+### 8.4 Debugging strategy [★★★★★ / ★★★★★ / ★★★★★]
+### 8.5 Template / code organization basics [★★★★☆ / ★★★★☆ / ★★★★★]
