@@ -1,187 +1,175 @@
-# Data_Structures
+# Tree
 
 ### Target
 ### - IOI / TOI / Long-term CP foundation
 
 ---
 
-## 1. Linear Containers
+## 1. Tree Foundations
 | 觀念 | IOI importance |
 |---|---|
-| stack mental model and LIFO behavior | 🌟🌟🌟🌟🌟 |
-| queue mental model and FIFO behavior | 🌟🌟🌟🌟🌟 |
-| deque mental model and double-ended operations | 🌟🌟🌟🌟 |
-| vector / dynamic array usage discipline | 🌟🌟🌟🌟🌟 |
-| choosing between stack / queue / deque / vector | 🌟🌟🌟🌟🌟 |
-| container-operation complexity awareness | 🌟🌟🌟🌟🌟 |
-| iterative state simulation using containers | 🌟🌟🌟🌟 |
+| tree definition and properties | 🌟🌟🌟🌟🌟 |
+| rooted vs unrooted tree | 🌟🌟🌟🌟🌟 |
+| parent / child / sibling / leaf / subtree | 🌟🌟🌟🌟🌟 |
+| unique simple path property | 🌟🌟🌟🌟🌟 |
+| weighted tree awareness | 🌟🌟🌟🌟 |
+| subtree as a natural DP / aggregation unit | 🌟🌟🌟🌟🌟 |
+| path as a first-class object in tree problems | 🌟🌟🌟🌟🌟 |
+| choosing a root as a modeling step | 🌟🌟🌟🌟🌟 |
 
-## 2. Frequency Structures and Associative Containers
+## 2. Tree Representation
 | 觀念 | IOI importance |
 |---|---|
-| frequency array | 🌟🌟🌟🌟 |
-| map | 🌟🌟🌟🌟🌟 |
-| unordered_map awareness | 🌟🌟🌟 |
-| set / multiset basics | 🌟🌟🌟🌟🌟 |
-| ordered vs unordered container tradeoff | 🌟🌟🌟🌟 |
-| maintaining distinct counts | 🌟🌟🌟🌟 |
-| maintaining counts / positions / occurrences by key | 🌟🌟🌟🌟 |
-| coordinate compression + associative structure combination | 🌟🌟🌟🌟 |
+| adjacency list representation | 🌟🌟🌟🌟🌟 |
+| parent array representation | 🌟🌟🌟🌟 |
+| rooting a tree by DFS / BFS | 🌟🌟🌟🌟🌟 |
+| avoiding revisiting parent | 🌟🌟🌟🌟🌟 |
+| tree input patterns and indexing discipline | 🌟🌟🌟🌟🌟 |
+| storing edge weights / edge ids / extra edge info | 🌟🌟🌟🌟 |
+| iterative vs recursive traversal implementation awareness | 🌟🌟🌟 |
 
-## 3. Stack Patterns
+## 3. Tree Traversal Basics
 | 觀念 | IOI importance |
 |---|---|
-| next greater / next smaller | 🌟🌟🌟🌟 |
-| previous greater / previous smaller | 🌟🌟🌟🌟 |
-| monotonic stack invariant | 🌟🌟🌟🌟🌟 |
-| maintaining candidate boundaries with stack | 🌟🌟🌟🌟 |
-| contribution / boundary counting awareness | 🌟🌟🌟🌟 |
-| histogram-style rectangle pattern | 🌟🌟🌟 |
-| stack-based expression / bracket / structural processing awareness | 🌟🌟 |
+| DFS on tree | 🌟🌟🌟🌟🌟 |
+| BFS on tree | 🌟🌟🌟🌟 |
+| preorder / postorder mental model | 🌟🌟🌟🌟🌟 |
+| traversal order and aggregation timing | 🌟🌟🌟🌟🌟 |
+| subtree enter / exit mental model | 🌟🌟🌟🌟 |
+| recursive vs iterative traversal awareness | 🌟🌟🌟 |
+| parent-aware traversal discipline | 🌟🌟🌟🌟🌟 |
 
-## 4. Queue / Deque Patterns
+## 4. Rooted-Tree Information
 | 觀念 | IOI importance |
 |---|---|
-| BFS queue usage | 🌟🌟🌟🌟🌟 |
-| process-order simulation with queue | 🌟🌟🌟🌟 |
-| deque for 0-1 BFS | 🌟🌟🌟🌟 |
-| monotonic queue for sliding window extrema | 🌟🌟🌟🌟 |
-| maintaining a candidate window with deque | 🌟🌟🌟🌟 |
-| choosing queue vs deque vs heap | 🌟🌟🌟🌟 |
+| parent | 🌟🌟🌟🌟🌟 |
+| depth | 🌟🌟🌟🌟🌟 |
+| subtree size | 🌟🌟🌟🌟🌟 |
+| tin / tout (entry / exit time) | 🌟🌟🌟🌟 |
+| ancestor / descendant relation via tin / tout | 🌟🌟🌟🌟 |
+| depth-based reasoning on rooted tree | 🌟🌟🌟🌟🌟 |
+| maintaining rooted-tree metadata during DFS | 🌟🌟🌟🌟🌟 |
 
-## 5. Priority Queue / Heap
+## 5. Tree Distance and Diameter
 | 觀念 | IOI importance |
 |---|---|
-| min-heap vs max-heap | 🌟🌟🌟🌟🌟 |
-| repeated best-candidate extraction | 🌟🌟🌟🌟🌟 |
-| heap in Dijkstra | 🌟🌟🌟🌟🌟 |
-| heap in greedy scheduling / interval / merge problems | 🌟🌟🌟🌟🌟 |
-| heap with lazy deletion awareness | 🌟🌟🌟 |
-| K-th / best-first / candidate generation usage | 🌟🌟🌟🌟 |
-| merging sorted streams with heap | 🌟🌟🌟 |
-| choosing heap vs multiset vs binary search on answer | 🌟🌟🌟🌟 |
+| tree distance intuition | 🌟🌟🌟🌟🌟 |
+| diameter by two DFS / BFS | 🌟🌟🌟🌟 |
+| longest-path reasoning on trees | 🌟🌟🌟🌟🌟 |
+| farthest-node trick | 🌟🌟🌟🌟 |
+| eccentricity awareness | 🌟🌟🌟 |
+| distance to diameter endpoints trick awareness | 🌟🌟🌟 |
+| weighted tree distance awareness | 🌟🌟🌟🌟 |
 
-## 6. Disjoint Set Union (DSU / Union-Find)
+## 6. Subtree Aggregation
 | 觀念 | IOI importance |
 |---|---|
-| parent representation | 🌟🌟🌟🌟🌟 |
-| find | 🌟🌟🌟🌟🌟 |
-| union / merge | 🌟🌟🌟🌟🌟 |
-| path compression | 🌟🌟🌟🌟🌟 |
-| union by size / rank | 🌟🌟🌟🌟 |
-| connected-component maintenance | 🌟🌟🌟🌟🌟 |
-| DSU for offline connectivity / grouping thinking | 🌟🌟🌟🌟 |
-| DSU with extra component information awareness | 🌟🌟🌟 |
-| rollback DSU awareness | 🌟🌟 |
-| persistent / time-travel connectivity awareness | 🌟 |
+| subtree sum | 🌟🌟🌟🌟 |
+| counting nodes in subtree | 🌟🌟🌟🌟🌟 |
+| subtree min / max / property count | 🌟🌟🌟🌟 |
+| post-order accumulation | 🌟🌟🌟🌟🌟 |
+| aggregating child contributions into parent | 🌟🌟🌟🌟🌟 |
+| subtree frequency / color / label counting awareness | 🌟🌟🌟 |
+| combining subtree information with external information awareness | 🌟🌟🌟 |
 
-## 7. Fenwick Tree / BIT
+## 7. Tree DP Foundations
 | 觀念 | IOI importance |
 |---|---|
-| why BIT exists | 🌟🌟🌟🌟🌟 |
-| lowbit mental model | 🌟🌟🌟🌟 |
-| point update + prefix query | 🌟🌟🌟🌟🌟 |
-| prefix query + point value reconstruction awareness | 🌟🌟🌟 |
-| range sum by prefix subtraction | 🌟🌟🌟🌟🌟 |
-| range update / point query BIT awareness | 🌟🌟🌟🌟 |
-| range update / range query BIT awareness | 🌟🌟🌟 |
-| coordinate compression + BIT | 🌟🌟🌟🌟🌟 |
-| inversion counting with BIT | 🌟🌟🌟🌟 |
-| order / counting / offline query support with BIT | 🌟🌟🌟🌟🌟 |
+| DP state on node | 🌟🌟🌟🌟🌟 |
+| merge child contributions | 🌟🌟🌟🌟🌟 |
+| leaf base case handling | 🌟🌟🌟🌟🌟 |
+| choose / not choose tree DP | 🌟🌟🌟🌟 |
+| longest-path-style tree DP | 🌟🌟🌟🌟 |
+| rooted-subtree optimization DP | 🌟🌟🌟🌟 |
+| designing tree DP state from subtree meaning | 🌟🌟🌟🌟🌟 |
+| proving tree DP transition correctness | 🌟🌟🌟🌟 |
 
-## 8. Segment Tree Foundations
+## 8. Rerooting DP
 | 觀念 | IOI importance |
 |---|---|
-| why segment tree exists | 🌟🌟🌟🌟🌟 |
-| node meaning / segment meaning | 🌟🌟🌟🌟🌟 |
-| build | 🌟🌟🌟🌟 |
-| point update | 🌟🌟🌟🌟🌟 |
-| range query | 🌟🌟🌟🌟🌟 |
-| sum / min / max segment tree | 🌟🌟🌟🌟🌟 |
-| recursive implementation mental model | 🌟🌟🌟🌟 |
-| iterative segment tree awareness | 🌟🌟🌟 |
-| when segtree beats prefix / BIT | 🌟🌟🌟🌟🌟 |
-| choosing BIT vs segtree | 🌟🌟🌟🌟🌟 |
+| why subtree-only DP is sometimes not enough | 🌟🌟🌟🌟 |
+| rerooting idea | 🌟🌟🌟🌟 |
+| parent-side contribution propagation | 🌟🌟🌟🌟 |
+| all-roots answer computation | 🌟🌟🌟🌟 |
+| prefix / suffix merge trick for rerooting awareness | 🌟🌟🌟 |
+| distinguishing subtree DP vs rerooting DP | 🌟🌟🌟🌟🌟 |
 
-## 9. Segment Tree Augmentations
+## 9. Euler Tour / Flattening
 | 觀念 | IOI importance |
 |---|---|
-| lazy propagation basics | 🌟🌟🌟🌟 |
-| range add / range assign awareness | 🌟🌟🌟🌟 |
-| maintaining custom node information | 🌟🌟🌟🌟 |
-| merge function design | 🌟🌟🌟🌟🌟 |
-| max subarray / structural segment information awareness | 🌟🌟🌟 |
-| first position satisfying condition awareness | 🌟🌟🌟 |
-| segment tree over compressed coordinates | 🌟🌟🌟🌟 |
-| segment tree as query engine for offline / sweep problems | 🌟🌟🌟🌟 |
+| flatten tree into array | 🌟🌟🌟🌟 |
+| subtree as interval | 🌟🌟🌟🌟🌟 |
+| tin-order flattening | 🌟🌟🌟🌟 |
+| using BIT / segtree on flattened subtree | 🌟🌟🌟🌟 |
+| entry-time based subtree queries | 🌟🌟🌟🌟 |
+| subtree updates / subtree queries via flattening | 🌟🌟🌟🌟 |
+| distinguishing subtree query vs path query | 🌟🌟🌟🌟🌟 |
 
-## 10. Sparse Table and Static Range Query Structures
+## 10. LCA and Ancestor Queries
 | 觀念 | IOI importance |
 |---|---|
-| static range query setting | 🌟🌟🌟🌟 |
-| sparse table for RMQ | 🌟🌟🌟🌟 |
-| idempotent operation requirement awareness | 🌟🌟🌟 |
-| log table preprocessing | 🌟🌟🌟 |
-| choosing sparse table vs segment tree | 🌟🌟🌟🌟 |
-| static vs dynamic query distinction | 🌟🌟🌟🌟🌟 |
+| what LCA solves | 🌟🌟🌟🌟🌟 |
+| binary lifting table mental model | 🌟🌟🌟🌟🌟 |
+| k-th ancestor query | 🌟🌟🌟🌟 |
+| distance using LCA | 🌟🌟🌟🌟🌟 |
+| ancestor jump preprocessing | 🌟🌟🌟🌟 |
+| path relation reasoning with LCA | 🌟🌟🌟🌟 |
+| tin / tout ancestor check + LCA combination | 🌟🌟🌟🌟 |
 
-## 11. Ordered Set / Multiset / Balanced BST Usage
+## 11. Binary Lifting as a General Tree Tool
 | 觀念 | IOI importance |
 |---|---|
-| maintaining sorted active elements | 🌟🌟🌟🌟 |
-| predecessor / successor queries | 🌟🌟🌟🌟 |
-| insert / erase / lower_bound in ordered set | 🌟🌟🌟🌟🌟 |
-| multiset for duplicate values | 🌟🌟🌟🌟 |
-| sliding window with ordered container awareness | 🌟🌟🌟 |
-| event processing with active set | 🌟🌟🌟🌟 |
-| choosing set / multiset vs heap | 🌟🌟🌟🌟 |
+| lifting parent by powers of two | 🌟🌟🌟🌟🌟 |
+| aligning depths before LCA | 🌟🌟🌟🌟🌟 |
+| jumping upward under constraints awareness | 🌟🌟🌟 |
+| storing extra information on jumps awareness | 🌟🌟🌟 |
+| binary lifting as path-query support structure | 🌟🌟🌟🌟 |
 
-## 12. Monotonic Data Structures
+## 12. Path Queries on Trees
 | 觀念 | IOI importance |
 |---|---|
-| monotonic stack | 🌟🌟🌟🌟🌟 |
-| monotonic queue | 🌟🌟🌟🌟 |
-| nearest greater / smaller family recognition | 🌟🌟🌟🌟🌟 |
-| sliding window min / max | 🌟🌟🌟🌟 |
-| removing dominated candidates | 🌟🌟🌟🌟 |
-| monotonicity as a DS-maintenance invariant | 🌟🌟🌟🌟🌟 |
+| subtree query vs path query distinction | 🌟🌟🌟🌟🌟 |
+| path decomposition awareness | 🌟🌟🌟 |
+| reducing path question to LCA + partial paths | 🌟🌟🌟🌟 |
+| path aggregate query awareness | 🌟🌟🌟🌟 |
+| when flattening is enough and when it is not | 🌟🌟🌟🌟 |
+| edge-based vs node-based path query distinction | 🌟🌟🌟🌟 |
 
-## 13. Offline Query Data-Structure Thinking
+## 13. Heavy-Light Decomposition (HLD) Awareness
 | 觀念 | IOI importance |
 |---|---|
-| sorting queries by right endpoint / value / time | 🌟🌟🌟🌟 |
-| sweep events and update a structure | 🌟🌟🌟🌟 |
-| answer queries offline with BIT / segtree | 🌟🌟🌟🌟🌟 |
-| interval contribution counting | 🌟🌟🌟🌟 |
-| offline inversion / order statistics style thinking | 🌟🌟🌟🌟 |
-| value-sorted offline processing | 🌟🌟🌟🌟 |
-| DSU / BIT / segtree as offline engines | 🌟🌟🌟🌟🌟 |
+| why subtree interval tricks are not enough for general path queries | 🌟🌟🌟🌟 |
+| heavy child / light edge idea | 🌟🌟🌟 |
+| path decomposition into O(log n) chains | 🌟🌟🌟 |
+| mapping chains to segment tree intervals | 🌟🌟🌟 |
+| subtree + path query unification awareness | 🌟🌟🌟 |
+| when HLD is actually the right tool | 🌟🌟 |
 
-## 14. Small-to-Large / Merge-Based Structure Thinking
+## 14. Small-to-Large / DSU on Tree Awareness
 | 觀念 | IOI importance |
 |---|---|
-| merge small container into large container | 🌟🌟🌟 |
-| subtree-frequency aggregation awareness | 🌟🌟🌟 |
-| complexity reason behind small-to-large merging | 🌟🌟🌟 |
-| map / multiset merge on tree awareness | 🌟🌟 |
-| when small-to-large is the right structural trick | 🌟🌟 |
+| subtree color / frequency aggregation problem type | 🌟🌟🌟 |
+| keep-big-child / merge-small-child idea | 🌟🌟 |
+| amortized intuition behind DSU on tree | 🌟🌟 |
+| when DSU on tree is preferable to naive subtree recomputation | 🌟🌟 |
+| relation to small-to-large merging | 🌟🌟🌟 |
 
-## 15. Persistence / Rollback / Time-Aware Structure Awareness
+## 15. Centroid and Divide-Based Tree Thinking Awareness
 | 觀念 | IOI importance |
 |---|---|
-| rollback idea | 🌟🌟 |
-| rollback DSU awareness | 🌟🌟 |
-| persistent segment tree awareness | 🌟🌟 |
-| versioned query idea | 🌟🌟 |
-| offline time-segment / divide-and-conquer-over-time awareness | 🌟 |
+| centroid definition intuition | 🌟🌟 |
+| subtree size balancing idea | 🌟🌟 |
+| centroid decomposition awareness | 🌟 |
+| path counting via centroid decomposition awareness | 🌟 |
+| when centroid-style divide is relevant | 🌟 |
 
-## 16. Structure Selection Skill
+## 16. Tree Problem Modeling Skill
 | 觀念 | IOI importance |
 |---|---|
-| prefix sum vs BIT vs segment tree | 🌟🌟🌟🌟🌟 |
-| queue / deque / heap / set selection | 🌟🌟🌟🌟🌟 |
-| array vs map vs unordered_map vs set | 🌟🌟🌟🌟🌟 |
-| static query structure vs dynamic query structure | 🌟🌟🌟🌟🌟 |
-| online vs offline structure choice | 🌟🌟🌟🌟🌟 |
-| when not to use a heavy structure | 🌟🌟🌟🌟🌟 |
-| simplifying a problem before throwing a DS at it | 🌟🌟🌟🌟🌟 |
+| choosing a root to simplify the statement | 🌟🌟🌟🌟🌟 |
+| turning statement requirements into subtree / path / ancestor / depth questions | 🌟🌟🌟🌟🌟 |
+| distinguishing tree traversal vs tree DP vs rerooting vs path-query problem | 🌟🌟🌟🌟🌟 |
+| recognizing when a tree problem is really a graph / DP / DS problem in disguise | 🌟🌟🌟🌟🌟 |
+| choosing the simplest sufficient tree technique | 🌟🌟🌟🌟🌟 |
+| recognizing when the answer is local-to-subtree vs global-over-all-roots | 🌟🌟🌟🌟 |
+| recognizing when to flatten, when to LCA, and when to HLD | 🌟🌟🌟🌟 |
