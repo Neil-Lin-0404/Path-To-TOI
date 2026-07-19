@@ -21,7 +21,7 @@
 | traversal patterns | 🌟🌟🌟🌟🌟 | ✅ |
 | indexing discipline | 🌟🌟🌟🌟🌟 | ✅ |
 | reverse traversal / multi-array processing basics | 🌟🌟🌟🌟 | ✅ |
-| frequency counting with arrays | 🌟🌟🌟🌟 | |
+| frequency counting with arrays | 🌟🌟🌟🌟 | ✅ |
 
 ## 3. Simulation and State Tracking
 | 觀念 | NCKU importance | Check ✅ |
