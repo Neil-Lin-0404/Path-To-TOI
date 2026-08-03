@@ -36,7 +36,7 @@
 | 觀念 | NCKU importance | Check ✅ |
 |---|---|---|
 | why sorting changes problems | 🌟🌟🌟🌟🌟 | |
-| sorting numbers / pairs / structs | 🌟🌟🌟🌟🌟 | |
+| sorting numbers / pairs / structs | 🌟🌟🌟🌟🌟 | ✅ |
 | comparator basics | 🌟🌟🌟🌟 | |
 | common sorting-based problem transformations | 🌟🌟🌟🌟🌟 | |
 | stability awareness / tie-breaking awareness | 🌟🌟🌟 |
@@ -44,10 +44,10 @@
 ## 5. Prefix Preprocessing Foundations
 | 觀念 | NCKU importance | Check ✅ |
 |---|---|---|
-| prefix sum | 🌟🌟🌟🌟🌟 | |
+| prefix sum | 🌟🌟🌟🌟🌟 | ✅ |
 | 2D prefix sum basics | 🌟🌟🌟🌟 | |
 | difference array intuition | 🌟🌟🌟🌟🌟 | |
-| prefix frequency / cumulative counting basics | 🌟🌟🌟🌟 | |
+| prefix frequency / cumulative counting basics | 🌟🌟🌟🌟 | ✅ |
 | when preprocessing beats repeated scanning | 🌟🌟🌟🌟🌟 | |
 
 ## 6. Recursion, Brute Force, and Search Foundations
