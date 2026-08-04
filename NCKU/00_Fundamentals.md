@@ -45,17 +45,17 @@
 | 觀念 | NCKU importance | Check ✅ |
 |---|---|---|
 | prefix sum | 🌟🌟🌟🌟🌟 | ✅ |
-| 2D prefix sum basics | 🌟🌟🌟🌟 | |
+| 2D prefix sum basics | 🌟🌟🌟🌟 |✅|
 | difference array intuition | 🌟🌟🌟🌟🌟 | |
 | prefix frequency / cumulative counting basics | 🌟🌟🌟🌟 | ✅ |
-| when preprocessing beats repeated scanning | 🌟🌟🌟🌟🌟 | |
+| when preprocessing beats repeated scanning | 🌟🌟🌟🌟🌟 | ✅|
 
 ## 6. Recursion, Brute Force, and Search Foundations
 | 觀念 | NCKU importance | Check ✅ |
 |---|---|---|
-| recursion mental model | 🌟🌟🌟🌟 | |
-| recursive enumeration | 🌟🌟🌟 | |
-| brute force as a legitimate strategy | 🌟🌟🌟🌟🌟 | |
+| recursion mental model | 🌟🌟🌟🌟 |⚠️|
+| recursive enumeration | 🌟🌟🌟 |⚠️ |
+| brute force as a legitimate strategy | 🌟🌟🌟🌟🌟 | ✅|
 | pruning intuition | 🌟🌟 | | 
 | backtracking preview | 🌟 | |
 
