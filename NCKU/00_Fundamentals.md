@@ -56,8 +56,8 @@
 | recursion mental model | 🌟🌟🌟🌟 |⚠️|
 | recursive enumeration | 🌟🌟🌟 |⚠️ |
 | brute force as a legitimate strategy | 🌟🌟🌟🌟🌟 | ✅|
-| pruning intuition | 🌟🌟 | | 
-| backtracking preview | 🌟 | |
+| pruning intuition | 🌟🌟 |✅ | 
+| backtracking preview | 🌟 |✅ |
 
 ## 7. Bitwise and Integer Handling Foundations
 | 觀念 | NCKU importance | Check ✅ |
