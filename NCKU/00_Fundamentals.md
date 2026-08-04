@@ -62,17 +62,17 @@
 ## 7. Bitwise and Integer Handling Foundations
 | 觀念 | NCKU importance | Check ✅ |
 |---|---|---|
-| binary representation basics | 🌟🌟🌟 | | 
-| bit operations: &, \|, ^, ~, <<, >> | 🌟🌟🌟 | |
-| bitmask intuition | 🌟🌟 | |
-| integer overflow / long long discipline | 🌟🌟🌟🌟🌟 | |
-| useful low-level arithmetic tricks | 🌟🌟🌟 | |
+| binary representation basics | 🌟🌟🌟 | ✅ | 
+| bit operations: &, \|, ^, ~, <<, >> | 🌟🌟🌟 | ✅ |
+| bitmask intuition | 🌟🌟 |✅ |
+| integer overflow / long long discipline | 🌟🌟🌟🌟🌟 | ✅ |
+| useful low-level arithmetic tricks | 🌟🌟🌟 |✅ |
 
 ## 8. Contest Implementation Discipline
 | 觀念 | NCKU importance | Check ✅ |
 |---|---|---|
-| dry-run discipline | 🌟🌟🌟🌟🌟 | |
-| edge-case checklist | 🌟🌟🌟🌟🌟 | |
-| 0-index vs 1-index discipline | 🌟🌟🌟🌟🌟 | |
-| debugging strategy | 🌟🌟🌟🌟🌟 | |
-| template / code organization basics | 🌟🌟🌟🌟 | |
+| dry-run discipline | 🌟🌟🌟🌟🌟 |✅ |
+| edge-case checklist | 🌟🌟🌟🌟🌟 |✅ |
+| 0-index vs 1-index discipline | 🌟🌟🌟🌟🌟 |✅ |
+| debugging strategy | 🌟🌟🌟🌟🌟 | ✅|
+| template / code organization basics | 🌟🌟🌟🌟 |✅ |
