@@ -46,7 +46,7 @@
 |---|---|---|
 | prefix sum | 🌟🌟🌟🌟🌟 | ✅ |
 | 2D prefix sum basics | 🌟🌟🌟🌟 |✅|
-| difference array intuition | 🌟🌟🌟🌟🌟 | |
+| difference array intuition | 🌟🌟🌟🌟🌟 |✅ |
 | prefix frequency / cumulative counting basics | 🌟🌟🌟🌟 | ✅ |
 | when preprocessing beats repeated scanning | 🌟🌟🌟🌟🌟 | ✅|
 
