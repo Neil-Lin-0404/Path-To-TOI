@@ -26,11 +26,11 @@
 ## 3. Simulation and State Tracking
 | 觀念 | NCKU importance | Check ✅ |
 |---|---|---|
-| translating problem statements into state updates | 🌟🌟🌟🌟🌟 | |
-| maintaining counters / flags / positions / states | 🌟🌟🌟🌟🌟 | |
-| event-by-event simulation | 🌟🌟🌟🌟🌟 | |
-| multi-variable simulation | 🌟🌟🌟🌟 | |
-| invariant thinking in simulation | 🌟🌟🌟🌟 | |
+| translating problem statements into state updates | 🌟🌟🌟🌟🌟 | ✅ |
+| maintaining counters / flags / positions / states | 🌟🌟🌟🌟🌟 | ✅ |
+| event-by-event simulation | 🌟🌟🌟🌟🌟 | ✅ |
+| multi-variable simulation | 🌟🌟🌟🌟 | ✅ |
+| invariant thinking in simulation | 🌟🌟🌟🌟 | ✅ |
 
 ## 4. Sorting and Basic Ordering Power
 | 觀念 | NCKU importance | Check ✅ |
