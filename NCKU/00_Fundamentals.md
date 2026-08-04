@@ -35,11 +35,11 @@
 ## 4. Sorting and Basic Ordering Power
 | 觀念 | NCKU importance | Check ✅ |
 |---|---|---|
-| why sorting changes problems | 🌟🌟🌟🌟🌟 | |
+| why sorting changes problems | 🌟🌟🌟🌟🌟 | ✅ |
 | sorting numbers / pairs / structs | 🌟🌟🌟🌟🌟 | ✅ |
-| comparator basics | 🌟🌟🌟🌟 | |
-| common sorting-based problem transformations | 🌟🌟🌟🌟🌟 | |
-| stability awareness / tie-breaking awareness | 🌟🌟🌟 |
+| comparator basics | 🌟🌟🌟🌟 | ✅ |
+| common sorting-based problem transformations | 🌟🌟🌟🌟🌟 | ✅ |
+| stability awareness / tie-breaking awareness | 🌟🌟🌟 | ✅ |
 
 ## 5. Prefix Preprocessing Foundations
 | 觀念 | NCKU importance | Check ✅ |
