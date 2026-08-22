@@ -1,0 +1,833 @@
+                                                               大學程式設計先修檢測 程式識讀
+
+
+1. 給定右側函式 f( )，當執行
+                                                 int f (int i) {
+     f(10)時，最終回傳結果為何？
+                                                     if (i>0)
+                                                       if (((i/2)%2)==0)
+     (A) 1                                                  return f(i-2)*i;
+                                                       else
+     (B) 3840
+                                                            return f(i-2)*(-i);
+     (C) -3840
+                                                     else
+     (D) 執行時導致無窮迴圈，不會停止執行                              return 1;
+                                                 }
+
+
+
+
+2. 給定右側程式，若已知輸出的結果               int main() {
+     為 [1][2][3][5][4][6]， 程 式               int i, j;
+                                             for (i=0; i<5; i=i+1) {
+     中的 (?) 應為下列何者？
+                                                       for (j=0; (?) ; j=j+2)
+                                                             printf ("[%d]", i+j);
+     (A) j<i                                           }
+     (B) j>i                                 }
+                                 }
+     (C) j<=i
+     (D) j>=i
+
+
+
+
+3.    給定右側函式       f( ) ， 已 知            int f(int n) {
+      f(14)、f(10)、 f(6)分別回                    if (n < 2) {
+                                              return n;
+      傳 25、18、10，函式中的 (?)
+                                              }
+      應為下列何者？
+                                              else {
+                                                     return (n + f(_(?)_));
+
+     (A) (n+1)/2                              }
+                                         }
+     (B) n/2
+     (C) (n-1)/2
+     (D) (n/2)+1
+
+
+
+                                     1
+                                         大學程式設計先修檢測 程式識讀
+
+
+4.    給定右側程式片段，當程式執
+                          int Q[200];
+      行完後，輸出結果為何？         int i, val=0;
+                          int count=0;
+                          int head=0, tail=0;
+     (A) 9                for (i=1; i<=30; i=i+1) {
+
+     (B) 18                   Q[tail] = i;
+                              tail = tail + 1;
+     (C) 27
+                          }
+     (D) 30               while (tail > head + 1) {
+                              val = Q[head];
+                              head = head + 1;
+                              count = count + 1;
+                              if (count == 3) {
+                              count = 0;
+                                  Q[tail] = val;
+                              tail = tail + 1;
+                              }
+                          }
+                          printf ("%d", Q[head]);
+
+
+
+
+                      2
+                                                    大學程式設計先修檢測 程式識讀
+
+
+5.    右側程式正確的輸出應該如下：
+                             1       int k = 4;
+                             2       int m = 1;
+                   *
+                             3       for (int i=1; i<=5; i=i+1) {
+
+                 * * *       4          for (int j=1; j<=k; j=j+1) {
+                             5              printf (" ");
+               * * * * *     6          }
+                             7          for (int j=1; j<=m; j=j+1) {
+             * * * * * * *
+                             8              printf ("*");
+                             9          }
+        * * * * * * * * *
+                             10         printf ("\n");
+                             11        k = k – 1;
+
+     在不修改右側程式之第 4 行及第 7      12        m = m + 1;
+                             13 }
+     行程式碼的前提下，最少需修改
+     幾行程式碼以得到正確輸出？
+
+
+
+     (A) 1
+     (B) 2
+     (C) 3
+     (D) 4
+
+
+
+
+                                 3
+                                                    大學程式設計先修檢測 程式識讀
+
+
+6.       給定一整數列表 a[0]、a[1]、…、a[99]且 a[k]=3k+1，以 value=100 呼叫以下兩函式，
+         假設函式 f1 及 f2 之 while 迴圈主體分別執行 n1 與 n2 次（也就是說計算 if 敘述
+         執行次數，不包含 elif敘述），請問 n1 與n2 之值為何? 註： (low + high) /2 只
+         取整數部分。
+
+
+int f1(int a[], int value) {       int f2(int a[], int value) {
+     int r_value = -1;                 int r_value = -1;
+     int i = 0;                        int low = 0, high = 99;
+     while (i < 100) {                 int mid;
+          if (a[i] == value) {         while (low <= high) {
+              r_value = i;                 mid = (low + high)/2;
+              break;                       if (a[mid] == value) {
+          }                                    r_value = mid;
+          i = i + 1;                           break;
+     }                                     }
+     return r_value;                       else if (a[mid] < value) {
+}                                              low = mid + 1;
+                                           }
+                                           else {
+                                               high = mid - 1;
+                                           }
+                                       }
+                                       return r_value;
+                                   }
+
+
+
+     (A) n1=33, n2=4
+     (B) n1=33, n2=5
+     (C) n1=34, n2=4
+     (D) n1=34, n2=5
+
+
+
+
+                                  4
+                                                大學程式設計先修檢測 程式識讀
+
+
+7.   一個費式數列定義第一個數為 0，第二個數
+                                     int a=0;
+     為 1，之後的每個數都等於前兩個數相加， int b=1;
+     如下所示：                           int i, temp, N;
+                                        …
+                                     for (i=2; i<=N; i=i+1) {
+     0、1、1、2、3、5、8、13、21、34、55、
+                                        temp = b;
+     89…。右列的程式用以計算並印出第 N 個              __(a)    ;
+
+     (N≥2)費式數列的數值，請問 (a) 與 (b)          a = temp;
+                                        printf ("%d\n",   (b)   );
+     兩個空格的敘述（statement）應該為何？
+                                        }
+
+
+
+
+     (A) (a) f[i] = f[i-1]+f[i-2]   (b) f[N]
+     (B) (a) a = a+b                (b) a
+     (C) (a) b = a+b                (b) a
+     (D) (a) f[i] = f[i-1]+f[i-2]   (b)f[i]
+
+
+
+
+                                5
+                                           大學程式設計先修檢測 程式識讀
+
+
+8.   給定右側函式 f1( ) 及 f2( )。f1(1)   void f1 (int m) {
+     運算過程中，以下敘述何者為錯？                  if (m > 3) {
+                                          printf ("%d\n", m);
+                                          return;
+     (A) 印出的數字最大的是 4                  }
+     (B) f1 一共被呼叫二次                   else {
+                                          printf ("%d\n", m);
+     (C) f2一共被呼叫三次
+                                          f2(m+2);
+     (D) 數字 2 被印出兩次                       printf ("%d\n", m);
+                                      }
+                                  }
+
+
+                                  void f2 (int n) {
+                                      if (n > 3) {
+                                          printf ("%d\n", n);
+                                          return;
+                                      }
+                                      else {
+                                          printf ("%d\n", n);
+                                          f1(n-1);
+                                          printf ("%d\n", n);
+                                      }
+                                  }
+
+
+
+
+                           6
+                                      大學程式設計先修檢測 程式識讀
+
+
+9.   右側程式片段擬以輾轉除法求 i 與 j
+                                i = 76;
+     的最大公因數。請問 while 迴圈內容
+                                j = 48;
+     何者正確？
+                                while ((i % j) != 0) {
+
+                                   ____________
+     (A) k = i % j                 ____________
+        i = j
+                                   ____________
+        j = k
+                            }
+     (B) i = j              printf ("%d\n", j);
+
+        j = k
+        k = i % j
+     (C) i = j
+
+        j = i % k
+        k = i
+     (D) k = i
+
+        i = j
+
+        j = i % k
+
+
+
+
+                       7
+                                     大學程式設計先修檢測 程式識讀
+
+
+10. 右側程式執行過後所輸出數值為何？
+                       void main () {
+                           int count = 10;
+ (A) 11                    if (count > 0) {
+                               count = 11;
+ (B) 13
+                           }
+ (C) 15                    if (count > 10) {
+ (D) 16                        count = 12;
+                               if (count % 3 == 4) {
+                                   count = 1;
+                               }
+                               else {
+                                   count = 0;
+                               }
+                           }
+                           else if (count > 11) {
+                               count = 13;
+                           }
+                           else {
+                               count = 14;
+                           }
+                           if (count) {
+                               count = 15;
+                           }
+                           else      {
+                               count = 16;
+                           }
+
+
+                           printf ("%d\n", count);
+                       }
+
+
+
+
+                   8
+                                                 大學程式設計先修檢測 程式識讀
+
+
+11. 右側為一個計算 n 階乘的函式，請問
+                                 1. int fun (int n) {
+   該如何修改才會得到正確的結果？
+                                 2.        int fac = 1;
+
+                                 3.        if (n >= 0) {
+
+                                 4.            fac = n * fun(n - 1);
+
+                                 5.        }
+
+                                 6.        return fac;
+
+  (A) 第2 行，改為 fac = n            7. }
+
+  (B) 第3 行，改為 if (n > 0) {
+
+  (C) 第4 行，改為 fac = n * fun(n+1)
+
+  (D) 第4 行，改為 fac = fac * fun(n-1)
+
+
+
+
+12. 右側 f( )函式 (a), (b), (c) 處需
+                                   int f(int n) {
+   分別填入哪些數字，方能使得 f(4)輸
+                                       int p = 0;
+   出 2468 的結果？
+
+                                       int i = n;
+  (A) 1, 2, 1
+  (B) 0, 1, 2                          while (i >=        (a)       ) {
+
+  (C) 0, 2, 1                              p = 10 –       (b)       * i;
+  (D) 1, 1, 1
+                                           printf ("%d", p);
+
+                                           i = i -       (c)    ;
+
+                                       }
+
+                                   }
+
+
+
+
+                             9
+                                          大學程式設計先修檢測 程式識讀
+
+
+
+13. 右側 g(4)函式呼叫執行後，回傳    int f (int n)    {
+  值為何？
+                             if (n > 3) {
+
+                                 return 1;
+  (A) 6
+                             }
+  (B) 11
+
+  (C) 13                     else if (n == 2) {
+
+  (D) 14                         return (3 + f(n+1));
+
+                             }
+
+                             else {
+
+                                 return (1 + f(n+1));
+
+                             }
+
+                         }
+
+
+
+
+                         int g(int n) {
+
+                             int j = 0;
+
+                             for (int i=1; i<=n-1; i=i+1) {
+
+                                 j = j + f(i);
+
+                             }
+
+                             return j;
+
+                         }
+
+
+
+
+                        10
+                                             大學程式設計先修檢測 程式識讀
+
+
+
+
+14. 右側 Mystery( )函式 else 部
+                                    int Mystery (int x) {
+  分運算式應為何，才能使得
+                                        if (x <= 1) {
+  Mystery(9) 的回傳值為 34。
+                                            return   x;
+
+                                        }
+
+                                        else {
+
+  (A) x + Mystery(x-1)                      return ____________ ;
+
+  (B) x * Mystery(x-1)                  }
+  (C) Mystery(x-2) + Mystery(x+2)
+                                    }
+  (D) Mystery(x-2) + Mystery(x-1)
+
+
+
+
+                              11
+                                                     大學程式設計先修檢測 程式識讀
+
+
+15. 右側程 式 碼 執 行 後 ，
+                            int a[9] = {1, 3, 5, 7, 9, 8, 6, 4, 2};
+   輸 出 結 果 為 何？             int n=9, tmp;
+
+
+                            for (int i=0; i<n; i=i+1) {
+  (A) 2 4 6 8 9 7 5 3 1 9
+                                tmp = a[i];
+  (B) 1 3 5 7 9 2 4 6 8 9       a[i] = a[n-i-1];
+                                a[n-i-1] = tmp;
+  (C) 1 2 3 4 5 6 7 8 9 9
+                            }
+
+  (D) 2 4 6 8 5 1 3 7 9 9   for (int i=0; i<=n/2; i=i+1)
+                                printf ("%d %d ", a[i], a[n-i-1]);
+
+
+
+
+16. 右側函式以 F(7) 呼叫後回傳值為
+                                      int F(int a) {
+   12，則 <condition> 應為何？                  if ( <condition> )
+                                                 return 1;
+                                          else
+  (A) a < 3
+                                                 return F(a-2) + F(a-3);
+  (B)   a < 2                         }
+
+  (C)   a < 1
+
+  (D) a < 0
+
+
+
+
+                                 12
+                                 大學程式設計先修檢測 程式識讀
+
+
+17. 右側是依據分數 s 評定等第的程式碼片段，
+                             if (s>=90) {
+  正確的等第公式應為：                     printf ("A \n");
+  90~100 判為 A 等              }
+                             else if (s>=80) {
+   80~89 判為 B 等
+                                 printf ("B \n");
+   70~79 判為 C 等              }
+   60~69 判為 D 等              else if (s>60) {
+                                 printf ("D \n");
+    0~59 判為 F 等
+                             }
+  這段程式碼在處理 0~100 的分數時，有幾個分   else if (s>70) {
+  數的等第是錯的？                       printf ("C \n");
+                             }
+                             else {
+ (A) 20                          printf ("F\n");
+ (B) 11                      }
+
+ (C) 2
+
+ (D) 10
+
+
+
+
+                     13
+                                                      大學程式設計先修檢測 程式識讀
+
+
+18. 右 側 程 式
+              int maze[5][5]= {{1, 1, 1, 1, 1},
+   片段執行                          {1, 0, 1, 0, 1},
+   後，count                       {1, 1, 0, 0, 1},
+
+   的值為 何 ？                       {1, 0, 0, 1, 1},
+                                 {1, 1, 1, 1, 1} };
+              int count=0;
+  (A) 36      for (int i=1; i<=3; i=i+1) {
+                  for (int j=1; j<=3; j=j+1) {
+  (B) 20
+                      int dir[4][2] = {{-1,0}, {0,1}, {1,0}, {0,-1}};
+  (C) 12              for (int d=0; d<4; d=d+1) {
+                             if (maze[i+dir[d][0]][j+dir[d][1]]==1) {
+  (D) 3                          count = count + 1;
+                             }
+                      }
+                  }
+              }
+
+
+
+
+                                    14
+                                             大學程式設計先修檢測 程式識讀
+
+
+19. 右側程式片段中執行後若
+                   for (int i=0; i<=3; i=i+1) {
+  要印出下列圖案，(a) 的條
+                       for (int j=0; j<i; j=j+1)
+  件判斷式該如何設定？                  printf(" ");
+                       for (int k=6-2*i;        (a)   ; k=k-1)
+
+   * * * * * *                printf("*");
+                       printf("\n");
+     * * * *       }
+
+       * *
+
+
+ (A) k > 2
+
+ (B) k > 1
+
+ (C) k > 0
+
+ (D) k >－1
+
+
+
+
+                         15
+                                           大學程式設計先修檢測 程式識讀
+
+
+20. 下列程式碼是自動計算找零程式的一部分，程式碼中三個主要變數分別
+  為 Total (購買總額)，Paid (實際支付金額)，Change (找零金額)。但
+  是此程式片段有冗餘的程式碼，也就是移除該段程式碼之後不會影響程
+  式的功能。請找出冗餘程式碼的區塊。
+
+
+             int Total, Paid, Change;
+                   …
+             Change = Paid - Total;
+ (A) 冗餘程式碼
+             printf ("500 : %d pieces\n", (Change-Change%500)/500);
+    在A 區     Change = Change % 500;
+
+ (B) 冗餘程式碼
+             printf ("100 : %d coins\n", (Change-Change%100)/100);
+    在B 區     Change = Change % 100;
+
+ (C) 冗餘程式碼
+             // A 區
+    在C 區
+             printf ("50 : %d coins\n", (Change-Change%50)/50);
+ (D) 冗餘程式碼   Change = Change % 50;
+
+    在D 區
+             // B 區
+             printf ("10 : %d coins\n", (Change-Change%10)/10);
+             Change = Change % 10;
+
+
+             // C 區
+             printf ("5 : %d coins\n", (Change-Change%5)/5);
+             Change = Change % 5;
+
+
+             // D 區
+             printf ("1 : %d coins\n", (Change-Change%1)/1);
+             Change = Change % 1;
+
+
+
+
+                            16
+                                                    大學程式設計先修檢測 程式識讀
+
+
+21. 右側 G( )為遞迴函式，G(3, 7)
+                                 int G (int a, int x) {
+  執行後回傳值為何？                          if (x == 0)
+                                                return 1;
+                                         else
+  (A) 128                                       return (a * G(a, x - 1));
+                                 }
+  (B) 2187
+
+  (C) 6561
+
+  (D) 1024
+                            int A[8]={0, 2, 4, 6, 8, 10, 12, 14};
+22. 給定一個 1x8 的列表 A， A =
+  [0, 2, 4, 6, 8, 10, 12,
+  14]。右側函式 Search(x)真正 int Search(int x){
+  目的是找到 A 之中大於 x 的最小             int high= 7;
+  值。然而，這個函式有誤。請問
+                                 int low = 0;
+  下列哪個函式呼叫可測出函式有
+                                 while(high > low){
+  誤？
+                                     int mid = (high + low)/2;
+
+  (A) Search(-1)                     if(A[mid] <= x){
+  (B) Search(0)
+                                          low = mid + 1;
+  (C) Search(10)
+                                     }
+  (D) Search(16)
+                                     else {
+
+                                     high = mid;
+
+                                     }
+
+                                 }
+
+                                 return A[high];
+
+                            }
+
+
+
+                            17
+                                                  大學程式設計先修檢測 程式識讀
+
+
+23. 右側函式兩個回傳式分別該如何撰寫，才
+                                       int GCD (int a, int b){
+  能正確計算並回傳兩參數 a, b 之最大公
+  因數 (Greatest Common Divisor)？                int r;
+
+
+
+ (A) a, GCD(b,r)
+                                               r = a % b
+ (B) b, GCD(b,r)
+
+ (C) a, GCD(a,r)                               if r == 0:
+
+ (D) b, GCD(a,r)                                   return
+
+                                               return
+
+                                           }
+
+
+
+
+24. 若 A 是一個可儲存 n 筆整數的列表，
+                                       int A[n]={ … };
+  且資料儲存於 A[0]~A[n-1]。經過右側
+  程式碼運算後，以下何者敘述不一定正                    int p = q = A[0];
+
+  確？                                   for (int i=1; i<n; i=i+1) {
+
+                                               if (A[i] > p)
+  (A) p 是 A 列表資料中的最大值
+                                                    p = A[i];
+  (B)   q 是 A 列表資料中的最小值
+  (C)   q<p                                    if (A[i] < q)
+
+  (D) A[0] <= p                                     q = A[i];
+
+                                       }
+
+
+
+
+                                  18
+                                                           大學程式設計先修檢測 程式識讀
+
+
+25. 右側 F( )函式執行時，若輸
+                                     void F () {
+  入依序為整數 0, 1, 2, 3, 4, 5, 6,
+  7, 8, 9，請問 X 列表的元素值                         int X[10] = {0};
+
+  依順序為何？                                      for (int i=0; i<10; i=i+1) {
+
+                                                    scanf("%d",&X[(i+2)%10]);
+  (A) 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+                                              }
+  (B) 2, 0, 2, 0, 2, 0, 2, 0, 2, 0
+  (C) 9, 0, 1, 2, 3, 4, 5, 6, 7, 8   }
+  (D) 8, 9, 0, 1, 2, 3, 4, 5, 6, 7
+
+
+
+
+26. 右側程式片段無法正確列印 20 次的
+                                              for (int i=0; i<=100; i=i+5 5) {
+  "Hi!"，請問下列哪一個修正方式仍無
+  法正確列印 20 次的"Hi!"？                               printf ("%s s\n", "Hi!");
+
+                                              }
+
+
+
+
+  (A) 將 range(0, 101, 5) 改為 range(0, 20, 1)
+
+  (B) 將 range(0, 101, 5) 改為 range(5, 101, 5)
+
+  (C) 將 range(0, 101, 5) 改為 range(0, 100, 5)
+
+  (D) 將 range(0, 101, 5) 改為 range(5, 100, 5)
+
+
+
+
+                                         19
+                                                   大學程式設計先修檢測 程式識讀
+
+
+27. 給定右側函式 F( )，執行 F( )時哪一
+                                           Void F(int a) {
+  行程式碼永遠不會被執行到？
+                                                  while(a < 10)
+
+  (A) a = a + 5
+                                                          a = a + 5;
+  (B) a = a + 2
+                                                  if(a < 12)
+  (C) a = 5
+  (D) 每一行都執行得到                                            a = a + 2;
+
+                                                  if(a <=11)
+
+                                                          a = 5;
+
+                                           }
+
+
+
+
+28. 給定右側函式 F( )，F( )執行
+                              int F (int n) {
+  完所回傳的 x 值為何？
+                                  int x = 0;
+
+  (A) n(n+1)√⌊log2 n⌋             for(int i=1; i<=n; i=i+1)
+
+  (B) n2(n+1)/2
+                                       for(int j=i; j<=n; j=j+1)
+  (C) n(n+1)[ log2 n + 1]/2
+  (D) n(n+1)/2                           for(int k=1; k<=n; k=k*2)
+
+                                               x= x+ 1;
+
+                                  return x;
+
+                              }
+
+
+
+
+                                  20
+                                           大學程式設計先修檢測 程式識讀
+
+
+29. 右側程式擬找出列表 A 中的最
+                           int main () {
+  大值(M)和最小值(N)。不過，
+                               int M = -1, N = 101, s = 3;
+  這段程式碼有誤，請問 A 初始值
+  如何設定就可以測出程式有誤？               int A[] = ______?______;
+
+                               for (int i=0; i<s; i=i+1) {
+  (A) [90, 80, 100]
+                                   if (A[i]>M) {
+  (B) [80, 90, 100]
+  (C) [100, 90, 80]                    M = A[i];
+
+  (D) [90, 100, 80]                }
+
+                                   else if (A[i]<N) {
+
+                                       N = A[i];
+
+                                   }
+
+                               }
+
+                           printf("M = %d, N= %d\n", M, N);
+
+                           return0;
+
+                           }
+
+
+
+
+                      21
+                                    大學程式設計先修檢測 程式識讀
+
+
+30. 經過運算後，右側程式的輸出為何？
+                        for (i=1; i<=100; i=i+1) {
+                            b[i] = i;
+  (A) 1275
+                        }
+  (B) 20
+                        a[0] = 0;
+  (C) 1000
+  (D) 810               for (i=1; i<=100; i=i+1) {
+                            a[i] = b[i] + a[i-1];
+
+                        }
+
+                        printf ("%d\n",   a[50]-a[30]);
+
+
+
+
+                   22
+
