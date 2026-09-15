@@ -1,5 +1,19 @@
-# Info:
-Here is the entire path of my competitive programming route
+# Info
+
+競程路線 repo（TOI → 選訓 → IOI）。
+
+## 從哪裡開始看
+
+| 路徑 | 是什麼 |
+|---|---|
+| [Algorithms/](Algorithms/README.md) | **教學主文**（費曼筆記 + 模板）；圖論已整理成 `Graph/ShortestPath`、`Topo`、`MST` |
+| [Algorithms/Graph/README.md](Algorithms/Graph/README.md) | 圖論閱讀順序與索引 |
+| [CSES/Graph/](CSES/Graph/README.md) | CSES 圖論**題解程式**（依主題分組） |
+| [IOI/](IOI/) | 大綱／星數表 |
+| [NCKU/](NCKU/) | 比賽／學校筆記 |
+| [TOI-IOI-3Month-Plan.md](TOI-IOI-3Month-Plan.md) | 課表 |
+
+---
 
 # About me
 I'm a competitive programming learner from Taiwan (formal for Republic of China) , an island located at East Asia.

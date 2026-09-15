@@ -2,7 +2,7 @@
 
 > 可編譯副本：[FloydWarshall.cpp](FloydWarshall.cpp)  
 > 對照：[Dijkstra.md](Dijkstra.md) · [BellmanFord.md](BellmanFord.md)  
-> 卡關心法：[../Paradigms/Contest-Thinking.md](../Paradigms/Contest-Thinking.md)
+> 卡關心法：[../../Paradigms/Contest-Thinking.md](../../Paradigms/Contest-Thinking.md)
 
 ---
 

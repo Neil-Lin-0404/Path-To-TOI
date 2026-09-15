@@ -1,0 +1,32 @@
+# 編譯產物與暫存
+
+a.out
+*.o
+*.obj
+*.exe
+*.out
+
+# 本機常把「題名」編成無副檔名執行檔（與 .cpp 同名）
+CSES/Graph/CourseSchedule
+CSES/Graph/RoundTripII
+CSES/Graph/FlightRoutes
+CSES/Graph/ShortestRoutesI
+CSES/Graph/ShortestRoutesII
+CSES/Graph/CycleFinding
+CSES/Graph/BuildingRoads
+CSES/Graph/BuildingTeams
+CSES/Graph/CountingRooms
+CSES/Graph/Labyrinth
+CSES/Graph/MessageRoute
+CSES/Graph/Monsters
+CSES/Graph/RoundTrip
+CSES/Graph/HighScore
+CSES/Graph/FlightDiscounts
+
+**/tempCodeRunnerFile*
+**/tempCodeRunnerFile.cpp
+CSES/**/tempCodeRunnerFile*
+
+.DS_Store
+*.swp
+*~

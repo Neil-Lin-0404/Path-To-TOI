@@ -1,7 +1,7 @@
 # Bitmask DP Thinking（費曼版）
 
 > 流程：暴力 → 哪個小問題一直重複 → Top-down memo。  
-> 詳解對照：[Tutorial-Quick.md](Tutorial-Quick.md) §8 · 圖上最短路見 [Dijkstra.md](../Algorithms/Graph/Dijkstra.md)
+> 詳解對照：[Tutorial-Quick.md](Tutorial-Quick.md) §8 · 圖上最短路見 [Dijkstra.md](../Algorithms/Graph/ShortestPath/Dijkstra.md)
 
 ---
 
@@ -121,7 +121,7 @@ if (((mask >> j) & 1) == 0)
 - `f(mask, i)`：集合 + 「最後一個是誰」（TSP、相鄰限制）
 
 **圖 + mask：** 點變成 `(u, mask)`。  
-在圖上走路，順便更新 mask。這是**最短路**，不是遞迴加總。見 [Dijkstra.md](../Algorithms/Graph/Dijkstra.md)。
+在圖上走路，順便更新 mask。這是**最短路**，不是遞迴加總。見 [Dijkstra.md](../Algorithms/Graph/ShortestPath/Dijkstra.md)。
 
 PDF **F**：k≤9 種攤販。mask = 這條路上出現過哪些種類。  
 state ≈ `(現在路口, 上一種攤販, mask)`。

@@ -1,39 +1,42 @@
 # Algorithms
 
-費曼教學筆記 + 可跑模板。對齊 [IOI/](../IOI/) 主題拆法，但這裡寫「怎麼想、怎麼寫」，不是大綱星數表。
+費曼教學筆記 + 可跑模板。對齊 [IOI/](../IOI/) 主題拆法，這裡寫「怎麼想、怎麼寫」。
 
-**卡關／連 WA／沒測資：** 先讀 [Paradigms/Contest-Thinking.md](Paradigms/Contest-Thinking.md)。
+| 先讀這個 | 用途 |
+|---|---|
+| [Paradigms/Contest-Thinking.md](Paradigms/Contest-Thinking.md) | 場上卡關／連 WA |
+| [Graph/README.md](Graph/README.md) | 圖論主題索引（已分子資料夾） |
+| [Data_Structure/README.md](Data_Structure/README.md) | 資料結構索引 |
+| [CSES/](../CSES/) | 刷題程式（不是教學主文） |
+| [NCKU/](../NCKU/) | 比賽／學校專用筆記 |
 
-比賽專用筆記仍放 [NCKU/](../NCKU/)；刷題程式仍放 [CSES/](../CSES/) 等。
+## 怎麼長內容（慣例）
+
+1. **分 category**：圖 → `Graph/`，並查集 → `Data_Structure/`…  
+2. **Graph 再分子主題**：`ShortestPath/`、`Topo/`、`MST/`，不要全部平鋪在一層。  
+3. **一主題一主檔**：`Xxx.md`（故事 → 名詞 → 手跑 → 模板）+ 旁邊 `Xxx.cpp`。  
+4. **六歲標準**：沒學過競程也能懂直覺段；術語後出現並白話翻譯。  
+5. **太薄就合併**；category／主題 README **只當索引**。
 
 ## 分類 ↔ IOI
 
 | 目錄 | 對齊 | 狀態 |
 |---|---|---|
-| [Graph/](Graph/) | [IOI/05_Graph.md](../IOI/05_Graph.md) | 最短路三招合併 md 已寫 |
-| [DP/](DP/) | [IOI/06_DP.md](../IOI/06_DP.md) | 之後補 |
-| [Tree/](Tree/) | [IOI/02_Tree.md](../IOI/02_Tree.md) | 之後補 |
-| [Data_Structure/](Data_Structure/) | [IOI/01_Data_Structure.md](../IOI/01_Data_Structure.md) | 之後補 |
-| [String/](String/) | [IOI/08_String_Algorithms.md](../IOI/08_String_Algorithms.md) | 之後補 |
-| [Geometry/](Geometry/) | [IOI/09_Geometry.md](../IOI/09_Geometry.md) | 之後補 |
-| [Number_Theory/](Number_Theory/) | [IOI/07_Number_Theory.md](../IOI/07_Number_Theory.md) | 之後補 |
-| [Sort/](Sort/) | Fundamentals / Techniques | 之後補 |
-| [Paradigms/](Paradigms/) | [IOI/04_Algorithm_Paradigms.md](../IOI/04_Algorithm_Paradigms.md) | [Contest-Thinking](Paradigms/Contest-Thinking.md) 已寫 |
+| [Graph/](Graph/) | [IOI/05_Graph.md](../IOI/05_Graph.md) | ShortestPath + Topo + MST |
+| [Data_Structure/](Data_Structure/) | [IOI/01_Data_Structure.md](../IOI/01_Data_Structure.md) | DSU |
+| [Paradigms/](Paradigms/) | [IOI/04_Algorithm_Paradigms.md](../IOI/04_Algorithm_Paradigms.md) | Contest-Thinking |
+| [DP/](DP/) · [Tree/](Tree/) · [String/](String/) · [Geometry/](Geometry/) · [Number_Theory/](Number_Theory/) · [Sort/](Sort/) | 對應 IOI 各章 | 之後補 |
 
-## Graph 最短路（主線：一算法一 md）
+## 快速連結（已寫）
 
-每份含：**直覺 + 演算法課理論 + 模板**。可編譯副本仍是旁邊的 `.cpp`。
+**Graph**
 
-1. [Dijkstra.md](Graph/Dijkstra.md) + [Dijkstra.cpp](Graph/Dijkstra.cpp) — 正權單源  
-2. [BellmanFord.md](Graph/BellmanFord.md) + [BellmanFord.cpp](Graph/BellmanFord.cpp) — 可負單源、負環  
-3. [FloydWarshall.md](Graph/FloydWarshall.md) + [FloydWarshall.cpp](Graph/FloydWarshall.cpp) — 全點對  
+- [Dijkstra](Graph/ShortestPath/Dijkstra.md) · [Bellman-Ford](Graph/ShortestPath/BellmanFord.md) · [Floyd](Graph/ShortestPath/FloydWarshall.md)
+- [Topological Sort](Graph/Topo/TopologicalSort.md)
+- [MST（Kruskal／Prim）](Graph/MST/MST.md)
 
-讀法：該份 md 從頭到尾 → 默寫模板 → 能講出正確性假設。
+**Data Structure**
 
-| 邊權 / 需求 | 用什麼 |
-|---|---|
-| 全是 1 | BFS |
-| 只有 0/1 | 0-1 BFS |
-| 正權、單源 | Dijkstra |
-| 可負、單源 | Bellman-Ford |
-| 全點對、n 小 | Floyd-Warshall |
+- [DSU（含 Ackermann／α）](Data_Structure/DSU.md)
+
+讀法：該份 md 從頭到尾 → 默寫模板 → 能用自己的話講故事。

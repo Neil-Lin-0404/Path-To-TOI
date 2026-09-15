@@ -16,7 +16,7 @@
 | 貪心 | 每步選當下最好，且不會後悔 | 排序後就能決定；假貪心很常見 |
 | 搜尋 | DFS/回溯：走一步、不行就退 | 要找一組符合條件的狀態 |
 | DP | 小問題一直重複算 → memo 起來 | 要最優或計數，且子問題重疊 |
-| 圖搜 | 狀態當點、轉移當邊 | BFS=最少步；Dijkstra=有權重 → [Dijkstra.md](../Algorithms/Graph/Dijkstra.md) |
+| 圖搜 | 狀態當點、轉移當邊 | BFS=最少步；Dijkstra=有權重 → [Dijkstra.md](../Algorithms/Graph/ShortestPath/Dijkstra.md) |
 | 模擬 | 照規則一步步做 | 沒有隱藏算法，I 那種 |
 
 口訣：n 小→暴力；當下最好且不後悔→貪心；重複小問題→DP；轉移像走路→圖。
@@ -225,7 +225,7 @@ n 個來源，每個 xi≤10 個粒子；z≤10 個倍率。每源挑一個粒�
 圖上 a→b。花費 = 路段數 + 相鄰攤販不同的次數 + 整路有幾種攤販。`k≤9`。
 
 → 圖最短路，state 要帶「上一種攤販 + 用過哪些種類」。種類用 bitmask。Dijkstra/BFS 在 `(點, last, mask)` 上走。  
-詳：[Bitmask-DP-Thinking.md](Bitmask-DP-Thinking.md) · [Dijkstra.md](../Algorithms/Graph/Dijkstra.md)
+詳：[Bitmask-DP-Thinking.md](Bitmask-DP-Thinking.md) · [Dijkstra.md](../Algorithms/Graph/ShortestPath/Dijkstra.md)
 
 ### G 關卡設計
 長度 n≤1e15 的序列，每格 ∈ {-1,0,1}，前綴和永遠在 `[0,1]`。m≤2e5 個位置已經定死 ±1，其餘可選。問合法填法數 `% MOD`。
